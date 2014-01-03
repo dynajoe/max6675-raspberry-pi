@@ -1,0 +1,10 @@
+{
+  "name": "max6675-raspberry-pi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true
+}
