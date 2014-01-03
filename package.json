@@ -6,5 +6,6 @@
   "scripts": {
     "install": "node-gyp rebuild"
   },
+  "author": "Joe Andaverde",
   "gypfile": true
 }
