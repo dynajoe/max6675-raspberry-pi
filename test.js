@@ -1,4 +1,4 @@
-var Max6675 = require('./build/Release/Max6675.node');
+var Max6675 = require('max6675-raspberry-pi');
 
 var sensor = new Max6675({
    miso: 0,
@@ -6,8 +6,6 @@ var sensor = new Max6675({
    clk: 3
 });
 
-setInterval(function () {
-	var value = sensor.read();
-	console.log(value)
-}, 1000);
-
+setTimeout(function () {
+	console.log(sensor.read());
+});
