@@ -1,6 +1,7 @@
 #ifndef BUILDING_NODE_EXTENSION
 #define BUILDING_NODE_EXTENSION
-#endif#ifndef MAX6675_H
+#endif
+#ifndef MAX6675_H
 #define MAX6675_H
 
 #include <node.h>
