@@ -102,7 +102,7 @@ float Max6675::Read()
    digitalWrite(m_ssPin,LOW);                                 
    delay(2);
    digitalWrite(m_ssPin,HIGH);
-   delay(220);
+   delay(50);
 
    /* Read the chip and return the raw temperature value */
 
