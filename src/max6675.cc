@@ -82,7 +82,11 @@ Handle<Value> Max6675::ReadTemperature(const Arguments& args)
 {
   HandleScope scope;
   Max6675* obj = ObjectWrap::Unwrap<Max6675>(args.This());
-  float result = obj->Read();
+
+  float result;
+  int count = 3;
+  while(count-- && (result = obj->Read()) != -255);
+
   return scope.Close(Number::New(result));
 }
 
